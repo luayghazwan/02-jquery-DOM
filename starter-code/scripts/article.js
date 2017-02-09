@@ -5,6 +5,12 @@ var articles = [];
 function Article (opts) {
   // TODO: Use the JS object passed in to complete this constructor function:
   // Save ALL the properties of `opts` into `this`
+  this.author = opts.author;
+  this.authorUrl = opts.authorUrl;
+  this.title = opts.title;
+  this.category = opts.category;
+  this.body = opts.body;
+  this.publishedOn = opts.publishedOn;
 }
 
 Article.prototype.toHtml = function() {
